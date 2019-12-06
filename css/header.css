@@ -1,0 +1,103 @@
+.header {
+    height: 800px;
+    width: 100%;
+    background-color: #f3e1d5;
+    background-image: url('../img/header-bg/header-bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.header__nav-row {
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+}
+.header__nav {
+    display: flex;
+    color: #404040;
+    font-family: "Teko";
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+.header__nav-link {
+    position: relative;
+    color: #404040;
+    text-decoration: none;
+    margin-right: 52px;
+}
+.header__nav-link::after {
+    position: absolute;
+    right: -28px;
+    top: 12px;
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #004cff;
+    transform: rotate(45deg);
+    pointer-events: none;
+
+}
+.header__nav-link:last-child {
+    margin-right: 0;
+}
+.header__nav-link:last-child::after {
+    display: none;
+}
+.header__nav-link:hover, .header__nav-link--active {
+    color: #004cff;
+}
+.header__button {
+    height: 66px;
+    padding-top: 23px;
+    padding-left: 38px;
+    padding-right: 38px;
+    background-color: #004cff;
+    color: #fff;
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.45px;
+    transition: background-color 0.2s ease-in;
+}
+.header__button:hover {
+    background-color: #0a3fbb;
+}
+/* header__promo  */
+.header__promo {
+    max-width: 400px;
+}
+.header__title {
+    margin-bottom: 60px;
+    color: #fff;
+    font-family: "Teko";
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 2.73px;
+}
+.header__promo-button {
+    display: inline-block;
+    padding-top: 14px;
+    padding-left: 48px;
+    padding-right: 48px;
+    height: 61px;
+    border: 6px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: border-color 0.2s ease-in, color 0.2s ease-in;
+}
+.header__promo-button:hover {
+    color: #ffd03b;
+    border-color: #ffd03b;  
+}
+/* header__promo  */
