@@ -9,9 +9,6 @@
     justify-content: space-between;
     align-items: center;
 }
-.top-panel__icons:hover {
-    color: #ffd03b;
-}
 .top-panel__notification {
     font-size: 12px;
     font-weight: 500;
@@ -19,8 +16,6 @@
 .top-panel__icons {
     display: flex;
     align-items: center;
-    color: #fff;
-    transition: color 0.2s ease;
 }
 
 .top-panel__link:not(:last-child) {
