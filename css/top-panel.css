@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.top-panel__link:hover {
+.top-panel__icons:hover {
     color: #ffd03b;
 }
 .top-panel__notification {
