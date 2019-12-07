@@ -5,5 +5,19 @@
 .bottom-info__row {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    @media (min-width: 740px) {
+        flex-direction: row;
+    }
 
+}
+.top-info__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+    flex-direction: column;
+
+    @media (min-width: 740px) {
+        flex-direction: row;
+    }
 }

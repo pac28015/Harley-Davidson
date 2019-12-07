@@ -5,6 +5,7 @@
     width: 100%;
     margin-bottom: 44px;
 
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -31,10 +32,22 @@
     }
 }
 .info--medium {
-    width: 530px;
+    width: 100%;
+    @media (min-width: 740px) {     
+        width: 38%; 
+    }
+    @media (min-width: 1350px) {
+        width: 530px;
+    }
 }
 .info--large {
-    width: 777px;
+    width: 100%;
+    @media (min-width: 740px) {     
+        width: 60%; 
+    }
+    @media (min-width: 1350px) {
+        width: 777px;
+    }
 }
 .info__img {
     position: absolute;
@@ -58,43 +71,61 @@
     font-family: 'Teko', sans-serif;
     color: #fff;
     transition: opacity 0.2s ease-in;
+    padding: 30px;
+    text-decoration: none;
+    
+    @media (min-width: 740px) {     
+        padding: 0px;
+    }
 }
 .info__content:hover {
     opacity: 1;
     
 }
 .info__content-title {
-    position: absolute;
-    top: 50px;
-    left: 45px;
-    // width: 300px;
     color: #fff;
     font-family: 'Teko', sans-serif;
-    font-size: 44px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 0.9;
     text-transform: uppercase;
     letter-spacing: 2.73px;
+    margin-bottom: 50px;
+    display: block;
+
+    @media (min-width: 480px) {
+        font-size: 44px;
+    }
+    @media (min-width: 740px) {
+        position: absolute;
+        top: 50px;
+        left: 45px;
+    }
 
     @media (min-width: 980px) {
         width: 300px;
     }  
 }
-.info__content-discount {
-    position: absolute;
-    right: 30px;
-    bottom: 30px ;
+.info__content-discount {  
     width: 100px;
     font-size: 48px;
     font-weight: 700;
     line-height: 0.9;
     text-transform: uppercase;
+    @media (min-width: 740px) {
+        position: absolute;
+        right: 30px;
+        bottom: 30px ;
+    }
 }
 .info--wide .info__content-discount {
-    right: 30px;
-    bottom: 20px ;
-    width: 143px;
     font-size: 78px;
+    @media (min-width: 740px) {
+        right: 30px;
+        bottom: 20px;
+        width: 143px;
+    }
+
     @media (min-width: 1100px) {
         right: 68px;
         bottom: 73px ;
@@ -116,12 +147,14 @@
 
 /* banner 2/1 */
 .info--wide .info__content-title {
-    top: 40px;
-    left: 45px;
-    // width: 400px;
-    font-family: 'Teko', sans-serif;
-    font-size: 68px;
-    
+    font-size: 25px;
+    @media (min-width: 480px) {
+        font-size: 68px;
+    }
+    @media (min-width: 740px) {
+        top: 40px;
+        left: 45px;
+    }
     @media (min-width: 1100px) {
         top: 100px;
         left: 145px;
