@@ -14,13 +14,17 @@
     padding-top: 36px;
 }
 .header__nav {
-    display: flex;
-    color: #404040;
-    font-family: "Teko";
-    font-weight: 600;
-    font-size: 23px;
-    text-transform: uppercase;
-    letter-spacing: 0.45px;
+    display: none;
+
+    @media (min-width: 980px) {   
+        display: flex;
+        color: #404040;
+        font-family: "Teko";
+        font-weight: 600;
+        font-size: 23px;
+        text-transform: uppercase;
+        letter-spacing: 0.45px;
+    }
 }
 .header__nav-link {
     position: relative;
@@ -51,6 +55,10 @@
     color: #004cff;
 }
 .header__button {
+    display: none;
+
+     @media (min-width: 980px) {  
+    display: inline-block; 
     height: 66px;
     padding-top: 23px;
     padding-left: 38px;
@@ -66,6 +74,9 @@
     letter-spacing: 0.45px;
     transition: background-color 0.2s ease-in;
 }
+
+    
+}
 .header__button:hover {
     background-color: #0a3fbb;
 }
@@ -74,13 +85,23 @@
     max-width: 400px;
 }
 .header__title {
+    font-size: 42px;
     margin-bottom: 60px;
     color: #fff;
     font-family: "Teko";
-    font-size: 68px;
     font-weight: 700;
-    line-height: 72px;
+    line-height: 1.5;
     letter-spacing: 2.73px;
+
+    @media (min-width: 980px) {   
+        font-size: 52px;
+    }
+
+    @media (min-width: 980px) {   
+        font-size: 68px;
+    }
+
+    
 }
 .header__promo-button {
     display: inline-block;
@@ -99,5 +120,10 @@
 .header__promo-button:hover {
     color: #ffd03b;
     border-color: #ffd03b;  
+}
+
+
+.header__nav-button {
+    
 }
 /* header__promo  */
